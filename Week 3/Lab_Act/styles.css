@@ -1,0 +1,132 @@
+*{
+  font-family: "Avenir Next LT Pro"  ;
+}
+
+.container {
+  width: 1240px ;
+  margin: 0 auto;
+}
+
+.logo-header {
+  padding-left: 20px;
+}
+
+table {
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+td:not(.logo) {
+  padding: 15px 30px
+}
+
+p {
+  margin-bottom: 50px;
+}
+
+.logo-header{
+  font-size: 40px;
+  text-shadow: 3px 3px 13px rgba(91, 91, 91, 0.47);
+}
+
+.links {
+  width: 400px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+}
+
+.one,.two {
+  text-decoration: none;
+  color:DodgerBlue;
+  border: 2px solid DodgerBlue;
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+
+.three {
+  text-decoration: none;
+  color:#fff;
+  background-color: DodgerBlue;
+  padding: 10px 15px;
+  margin-right: 10px
+}
+
+.h1,.h2,.h3 {
+  padding: 10px 10px ;
+  color:#fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.h1 {
+  background:linear-gradient(to left, #13f1fc 0%,#0470dc 100%);
+}
+
+.h2 {
+  background:linear-gradient(135deg, #F36265 0%,#961276 100%);
+}
+
+.h3{
+  background:linear-gradient(to left, #42e695 0%,#3bb2b8 100%);
+}
+
+.sect-1 {
+  background-color: rgba(215, 254, 255, 0.76);
+  padding-bottom: 60px
+}
+
+.sect-2 {
+  background-color: rgba(254, 209, 235, 0.39);
+  padding-bottom: 30px
+}
+}
+
+.sect-3 {
+  background-color: rgba(236, 254, 208, 0.48)
+}
+
+iframe{
+  background-color: rgba(200, 200, 200, 0.48) ;
+  padding: 15px;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+.table-type {
+    text-align: center;
+}
+
+table {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+button {
+  border: 0px ;
+  padding: 15px  ;
+  color: #fff ;
+  background-color: rgb(251, 148, 82);
+  font-size:20px;
+}
+
+button:hover{
+  background-color: rgb(200, 78, 0);
+  cursor:pointer;
+}
+
+.one:hover {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+
+.two:hover {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+
+.three:hover {
+  background-color: RoyalBlue;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>P1</title>
+    <style media="screen">
+      * {
+        font-family: "Nunito",verdana;
+      }
+
+      fieldset {
+        background-color: #f4f7f8 ;
+        border: none ;
+        width:600px;
+      }
+
+      .heading {
+        text-align: center;
+        text-decoration: underline wavy rgb(180, 6, 205);
+        font-family: monospace;
+        font-size: 30px;
+      }
+
+      .top-view1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .top-view {
+        color:white;
+        background-color:rgb(244, 6, 99);
+        border: none;
+        padding: 10px 20px 10px 20px;
+        margin-right:10px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .reddit, .google, .youtube {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      div {
+        margin-bottom: 50px
+      }
+
+      legend {
+        text-transform: uppercase;
+        background-color:#e5f6fb ;
+        padding:5px 20px;
+      }
+
+      label {
+        display:block;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        margin-top: 20px
+      }
+
+      input[type="text"],input[type="submit"] {
+        background-color:#e8eeef;
+        border: 1px solid #DDDDDD;
+        padding:15px ;
+        margin-left: 5%;
+        margin-bottom: 2%;
+        color:#8a97a0;
+        box-sizing:border-box;
+        width:90%;
+        outline:0;
+      }
+
+      input[type="text"]:focus {
+        box-shadow:0 0 5px rgba(81, 203, 238, 1);
+        border: 1px solid rgba(81, 203, 238, 1);
+      }
+
+      input[type="submit"] {
+        background-color:rgb(71, 215, 97);
+        color:#fff;
+        text-transform: uppercase;
+        font-size: 15px ;
+        cursor: pointer
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Forms Hijacking Websites</h1>
+    <hr>
+    <br>
+  <div class="container">
+
+    <div class="top-view1">
+      <button class="top-view" type="button" name="button">CLICK ME</button>
+      <button class="top-view" type="button" name="button">CLICK ME</button>
+    </div>
+
+    <div class="reddit">
+      <form action="https://www.reddit.com" target="_blank" method="get">
+        <fieldset>
+          <legend>HIJACKING REDDIT</legend>
+          <label for="reddit">Search Reddit:</label>
+          <input type="text" name="q" id="reddit" placeholder="Type something..">
+          <input type="submit"value="Search">
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="google">
+      <form action="https://www.google.com" target="_blank" method="get">
+        <fieldset>
+          <legend>HIJACKING GOOGLE</legend>
+          <label for="google">Search Google:</label>
+          <input type="text" name="q" id="google" placeholder="Type something..">
+          <input type="submit" value="Search">
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="youtube">
+      <form action="https://www.youtube.com" target="_blank" method="get">
+        <fieldset>
+          <legend>HIJACKING YOUTUBE</legend>
+          <label for="youtube">Search Youtube:</label>
+          <input type="text" name="q" id="youtube" placeholder="Type something..">
+          <input type="submit" value="Search">
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="pop-up">
+      Hold me
+    </div>
+    </div>
+  </body>
+</html>

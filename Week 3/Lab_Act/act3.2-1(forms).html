@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Landing Page</title>
+    <style media="screen">
+      body {
+      background: #f7f7f7;
+      font-family: Arial , Tahoma;
+      }
+
+      h1 {
+      text-align: center;
+      color:#6d6d6d;
+      text-style: italic;
+      font-variant-caps: all-petite-caps ;
+      }
+
+      h1:hover {
+      color:rgb(250, 56, 139);
+      }
+
+      input[type="submit"] {
+      margin-top: 30px ;
+      padding: 10px 15px ;
+      background-color: rgb(236, 77, 104) ;
+      border: 0  ;
+      color: white;
+      font-family: "Avenir Next LT Pro";
+      border-radius: 60px;
+      font-size: 30px ;
+      width: 200px ;
+      font-weight: 300;
+      transition: font-size 1s ease-in-out , background-color 1s ease-in-out ;
+      }
+
+      input[type="submit"]:hover {
+      background-color:rgb(35, 161, 209) ;
+      font-size: 40px;
+      }
+
+      legend {
+      border: 3px solid #dddddd;
+      color: #74b4ea ;
+      background-color: #ffffff;
+      padding: 8px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 16px;
+      font-style: italic;
+      }
+
+      fieldset {
+      width: 800px;
+      margin-bottom: 30px;
+      padding: 20px ;
+      background-color: #ffffff ;
+      border: 3px solid #dddddd ;
+      }
+
+      input[type="text"] , input[type="password"] , input[type="email"] {
+      display: block;
+      padding-top: 7px;
+      padding-left: 10px;
+      width: 300px;
+      height: 25px;
+      margin: 0px 0px 30px 0px ;
+      border: 2px solid #e5e5e5 ;
+      }
+
+      .gender,.answer {
+      color:#009ab5;
+      font-weight: lighter;
+      font-size: 18px;
+      padding-right: 10px;
+      }
+
+      label:not(.gender)  {
+      display:block;
+      font-weight: lighter;
+      font-style: italic;
+      font-size: 18px;
+      padding-bottom: 10px;
+      color:#009ab5;
+      }
+
+      textarea {
+      margin-bottom: 20px;
+      width: 450px;
+      height: 200px;
+      border: 2px solid #dedede;
+      }
+
+      .one {
+      text-decoration: none;
+      color:#fff;
+      background-color: DodgerBlue;
+      padding: 10px 15px;
+      margin-right: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>APPLICATION FORM !</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="user">Username</label>
+        <input type="text" name="user" value="" placeholder="Type your username" title="Please fill out this field." required>
+        <label for="pass">Password</label>
+        <input type="password" name="pass" value="" placeholder="Type your password" title="Please fill out this field." required>
+        <label for="email">Email</label>
+        <input type="email" name="email" value="" placeholder="Type your email" title="Please fill out this field." required>
+        <label class="gender">Gender</label>
+        <select name="">
+          <option value="1" selected>Male</option>
+          <option value="2">Female</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Favorites</legend>
+        <label>What language do you want to learn the most?</label>
+        <div class="Radios">
+          <input id="r1" type="radio" name="1"> HTML
+          <br>
+          <input type="radio" name="2"> CSS
+          <br>
+          <input type="radio" name="3"> JavaScript
+          <br>
+          <br>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Message</legend>
+        <label>Describe Your Self Here</label>
+        <textarea class="t-area" placeholder="Start Typing..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Send Answers</legend>
+        <input type="checkbox">
+        <label class="answer">Remember My Answers</label>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+        <br>
+        <br>
+      </fieldset>
+    </form>
+  </body>
+</html>
