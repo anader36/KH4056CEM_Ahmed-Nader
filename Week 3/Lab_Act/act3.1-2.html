@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width = device-width" initial-scale: 1.0> -->
+    <title>Home</title>
+    <style media="screen">
+      * {
+        font-family: monospace;
+      }
+
+      .row {
+        width: 100%;
+        display: flex;
+      }
+
+      .col {
+        width: 30%;
+        padding: calc(10%/6);
+      }
+
+      img {
+        width: 100%;
+        height: 80%;
+      }
+
+      p {
+        margin: 0;
+        text-align: center;
+      }
+
+      h1 {
+        font-variant-caps: all-petite-caps;
+        font-size: 10vw;
+        text-align: center;
+      }
+
+      body {
+        margin: 0
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(0,86,138);
+      }
+
+      li {
+        list-style: none;
+        padding: 10px;
+        width: 20vw;
+        text-align: center;
+      }
+
+      li:hover {
+        background-color: rgb(77,159, 254)
+      }
+
+      ul li a {
+        text-decoration: none;
+        font-size: 1.1vw;
+        font-family: Nunito;
+        color: #fff;
+        text-transform: uppercase;
+      }
+
+      @viewport {
+        width: device-width;
+        zoom: 1.0;
+      }
+
+      @media screen and (max-width:380px) {
+        .row {
+          display: block
+        }
+
+        .col {
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </nav>
+      <h1>Galleria</h1>
+
+      <div class="row">
+        <div class="col">
+          <img src="image1.jpg" alt="First Picture in the website">
+          <p>Image 1</p>
+        </div>
+        <div class="col">
+          <img src="image2.jpg" alt="Second Picture in the website">
+          <p>Image 2</p>
+        </div>
+        <div class="col">
+          <img src="image3.jpg" alt="Third Picture in the website">
+          <p>Image 3</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <img src="image4.jpeg" alt="Fourth Picture in the website">
+          <p>Image 4</p>
+        </div>
+        <div class="col">
+          <img src="image5.jpeg" alt="Fifth Picture in the website">
+          <p>Image 5</p>
+        </div>
+        <div class="col">
+          <img src="image6.jpg" alt="Sixth Picture in the website">
+          <p>Image 6</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
